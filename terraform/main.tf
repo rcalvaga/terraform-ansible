@@ -17,10 +17,10 @@ data "google_project" "main" {
   project_id = var.project_id
 }
 
-data "google_compute_image" "image" {
-  name    = "${var.image_name}"
-  project = "${var.image_family}"
-}
+#data "google_compute_image" "image" {
+#  name    = "${var.image_name}"
+#  project = "${var.image_family}"
+#}
 
 resource "google_compute_instance" "default" {
   name         = "${var.instance_name}"
@@ -31,7 +31,6 @@ resource "google_compute_instance" "default" {
 
   labels = {
     environment = "dev"
-    #role = "mongodb"
   }
 
   boot_disk {
