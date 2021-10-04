@@ -38,7 +38,7 @@ variable "network" {
 
 variable "credential" {
   description = "credential file path different for different users"
-  default = "keyfile.json"
+  default = "/tmp/keyfile.json"
 }
 
 variable "tags" {
