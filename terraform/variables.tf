@@ -2,6 +2,10 @@ variable "instance_name" {
   type = string
 }
 
+variable "project_id" {
+  description = "The name of the new GCP project"
+}
+
 variable "machine_type" {
   description = "specified image id for instance"
   default = "n1-standard-1"
