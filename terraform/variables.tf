@@ -36,6 +36,11 @@ variable "network" {
   default = "default"
 }
 
+variable "credential" {
+  description = "credential file path different for different users"
+  default = "keyfile.json"
+}
+
 variable "tags" {
   type = list
   description = "tags is used for defining the rule of a instance"
