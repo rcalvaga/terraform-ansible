@@ -3,15 +3,15 @@
   hosts: all
   tasks:
   - terraform:
-    project_path: '{{ project_dir }}'
-    state: present
+      project_path: '{{ project_dir }}'
+      state: present
 
   # Define the backend configuration at init
   - terraform:
-    project_path: 'project/'
-    state: "{{ state }}"
-    force_init: true
-  #  backend_config:
-  #    region: "eu-west-1"
-  #    bucket: "some-bucket"
-  #    key: "random.tfstate"
+      project_path: 'project/'
+      state: "{{ state }}"
+      force_init: true
+    #  backend_config:
+    #    region: "eu-west-1"
+    #    bucket: "some-bucket"
+    #    key: "random.tfstate"
