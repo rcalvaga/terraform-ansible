@@ -1,10 +1,9 @@
 ---
 - name: Execute Terraform Plan using Ansible Automation Platform
   hosts: all
-  tasks:
-  
+  tasks:  
   - name: initializating and applying Terraform Project 
-  terraform:
+    terraform:
       project_path: '{{ project_dir }}/'
       state: "{{ state }}"
       force_init: true
