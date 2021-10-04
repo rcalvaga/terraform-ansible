@@ -1,7 +1,7 @@
 provider "google" {
   project     = var.project_id
   region      = var.region
-  credentials = file("/var/lib/awx/.config/gcloud/application_default_credentials.json")
+  credentials = "${file(var.credential)}"
 }
 
 locals {
