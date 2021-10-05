@@ -7,3 +7,9 @@
       project_path: '{{ project_dir }}/'
       state: "{{ state }}"
       force_init: true
+      
+      
+  - name: Set Vars Status
+    set_stats:
+      data:
+        vm_ip: "{{ output.outputs.ip.value }}"
