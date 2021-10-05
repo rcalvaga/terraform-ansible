@@ -38,7 +38,7 @@ variable "network" {
 
 variable "credential" {
   description = "credential file path different for different users"
-  default = "/var/lib/awx/.config/gcloud/application_default_credentials.json"
+  default = "keyfile.json"
 }
 
 variable "tags" {
